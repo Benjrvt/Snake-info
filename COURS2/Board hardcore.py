@@ -47,9 +47,9 @@ def draw():
             pyxel.quit()
     elif new_snake_head[1]>=30:
             pyxel.quit()
-    elif new_snake_head[1]<-1:
+    elif new_snake_head[1]<=-1:
             pyxel.quit()
-    elif new_snake_head[0]<-1:
+    elif new_snake_head[0]<=-1:
             pyxel.quit()
     if new_snake_head in snake_geometry:
         snake_geometry.pop(0)
@@ -73,14 +73,14 @@ def draw():
         new_snake_head[1]=snake_head[1]+snake_direction[1]
         snake_geometry=snake_geometry[1:]
         
-    if new_snake_head[0]==30:
-            time.sleep(0.2)
-    elif new_snake_head[1]==30:
-            time.sleep(0.2)
-    elif new_snake_head[1]==0:
-            time.sleep(0.2)
-    elif new_snake_head[0]==0:
-            time.sleep(0.2)
+    # if new_snake_head[0]==30:
+    #         time.sleep(0.2)
+    # elif new_snake_head[1]==30:
+    #         time.sleep(0.2)
+    # elif new_snake_head[1]==0:
+    #         time.sleep(0.2)
+    # elif new_snake_head[0]==0:
+    #         time.sleep(0.2)
     
       
 
